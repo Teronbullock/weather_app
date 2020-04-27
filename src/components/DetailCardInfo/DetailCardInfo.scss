@@ -1,0 +1,38 @@
+@import '../../assets/sass';
+
+.detail-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px;
+  width: 95%;
+  align-items: center;
+
+  @media (min-width: $break-m) {
+    grid-template-rows: 55px;
+  }
+
+  &__title,
+  &__info {
+    color: #fff9f9;
+    text-shadow: #0006 0px 1px;
+    margin: 0.5rem 0;
+  }
+
+  &__title {
+    font-size: 12px;
+    letter-spacing: 1.4px;
+
+    @media (min-width: $break-m) {
+      font-size: 14px;
+    }
+  }
+
+  &__info {
+    font-size: 14px;
+
+    @media (min-width: $break-m) {
+      font-size: 16px;
+      margin: 0.5rem 0 0;
+    }
+  }
+}

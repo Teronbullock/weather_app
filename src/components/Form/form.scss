@@ -1,0 +1,71 @@
+@import '../../assets/sass';
+
+.form {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+
+  @media (min-width: $break-m) {
+    width: 65%;
+  }
+
+  @media (min-width: $break-xl) {
+    width: 50%;
+  }
+
+  &__container {
+    width: 100%;
+    position: absolute;
+    height: 50px;
+
+    @media (min-width: $break-m) {
+      height: 70px;
+    }
+
+    @media (min-width: $break-xl) {
+      height: 100px;
+    }
+  }
+
+  &__input,
+  &__submit {
+    min-height: 30px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: #fff 1px solid;
+
+    @media (min-width: $break-sm) {
+      font-size: 15px;
+    }
+
+    @media (min-width: $break-m) {
+      height: 35px;
+    }
+  }
+
+  &__input::placeholder,
+  &__input[value],
+  &__submit {
+    color: #fff;
+  }
+
+  &__input {
+    width: 75%;
+    text-align: center;
+    margin-right: 0.5rem;
+    background-color: rgba(251, 253, 255, 0);
+  }
+
+  &__submit {
+    width: 25%;
+    border-radius: 20px;
+    background-color: #0000;
+    padding: 0.25rem 0;
+    &:active {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../assets/sass';
+
+.app-body {
+  height: 100%;
+  width: 100%;
+  //max-width: 800px;
+  margin: auto;
+  background-color: #031738;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+
+  &__top-section,
+  &__bottom-section {
+    @media (min-width: $break-m) {
+      max-width: 70%;
+      margin: auto;
+    }
+
+    @media (min-width: $break-xl) {
+      width: 50%;
+    }
+  }
+
+  &__top-section {
+    height: 250px;
+    padding-top: 3rem;
+
+    @media (min-width: $break-sm) {
+      height: 310px;
+      padding-top: 4.5rem;
+    }
+
+    @media (min-width: $break-m) {
+      height: 500px;
+      padding-top: 6.5rem;
+    }
+  }
+
+  &__overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.43);
+    padding: 0 0.5rem;
+  }
+}
