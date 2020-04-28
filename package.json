@@ -6,7 +6,6 @@
   "main": "src/index.js",
   "dependencies": {
     "axios": "0.19.2",
-    "dotenv": "^8.2.0",
     "g": "^2.0.1",
     "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
